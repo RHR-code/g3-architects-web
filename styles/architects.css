@@ -11,6 +11,15 @@
 .display_flex {
   display: flex;
 }
+.btn_primary {
+  background: #ff900e;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+}
 
 .text_gray {
   color: #424242;
@@ -28,6 +37,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.brand {
+  font-size: 3rem;
+  font-weight: 700;
+}
 .nav_item {
   list-style: none;
   margin-right: 30px;
@@ -39,4 +52,35 @@
 .banner {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+/* banner styling */
+.banner_content {
+  max-width: 850px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.banner_title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #131313;
+}
+.banner_description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #727272;
+}
+.banner_img {
+  width: 100%;
+}
+
+/* responsive media queries */
+@media screen and (max-width: 578px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
 }
