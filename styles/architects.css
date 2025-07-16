@@ -100,9 +100,39 @@ main > section {
   color: #ff900e;
 }
 .teams_info_des {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   margin: 24px 0 32px 0;
+}
+/* some facts section */
+.facts_description {
+  max-width: 542px;
+}
+.fact_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.fact_number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #424242;
+  margin: 10px 0 5px 0;
+}
+.fact_name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #727272;
+  margin: 5px;
 }
 
 /* responsive media queries for mobile */
