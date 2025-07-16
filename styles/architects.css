@@ -23,6 +23,10 @@ main > section {
   color: white;
 }
 
+.section_title {
+  font-size: 3rem;
+  font-weight: 700;
+}
 .text_gray {
   color: #424242;
 }
@@ -89,10 +93,6 @@ main > section {
 .teams_info {
   max-width: 537px;
 }
-.teams_info_title {
-  font-size: 45px;
-  font-weight: 700;
-}
 #Quick_list {
   font-weight: 500;
 }
@@ -105,12 +105,24 @@ main > section {
   margin: 24px 0 32px 0;
 }
 
-/* responsive media queries */
+/* responsive media queries for mobile */
 @media screen and (max-width: 578px) {
   html {
     font-size: 10px;
   }
-  .navbar {
+  .navbar,
+  .teams {
+    flex-direction: column;
+  }
+  .teams_image_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*responsive media queries for tab  */
+
+@media screen and (min-width: 578px) and (max-width: 992px) {
+  .teams {
     flex-direction: column;
   }
 }
