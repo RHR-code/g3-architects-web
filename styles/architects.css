@@ -6,7 +6,9 @@
   font-weight: 400;
   font-style: normal;
 }
-
+main > section {
+  margin-top: 130px;
+}
 /* reuseable styling */
 .display_flex {
   display: flex;
@@ -73,6 +75,34 @@
 }
 .banner_img {
   width: 100%;
+}
+/* teams section styling */
+.teams {
+  align-items: center;
+  gap: 73px;
+}
+.teams_image_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.teams_info {
+  max-width: 537px;
+}
+.teams_info_title {
+  font-size: 45px;
+  font-weight: 700;
+}
+#Quick_list {
+  font-weight: 500;
+}
+#Features {
+  color: #ff900e;
+}
+.teams_info_des {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 24px 0 32px 0;
 }
 
 /* responsive media queries */
